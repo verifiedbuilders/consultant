@@ -1,10 +1,6 @@
 name: Deploy
 
 on:
-  workflow_run:
-    workflows: ["Integrate"]
-    types:
-      - completed
   workflow_dispatch:
   push:
     branches: [ "main" ]
@@ -12,8 +8,9 @@ on:
 jobs:
   Deploy:
     runs-on: ubuntu-latest
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
-    environment: production
+    environment:
+      name: production
+      url: ${{ steps.deploy_url.outputs.url }}
 
     steps:
       - name: Checkout Repository
@@ -57,3 +54,7 @@ jobs:
         run: |
           docker build --platform linux/amd64 -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
           docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
+
+      - name: Set deploy URL
+        id: deploy_url
+        run: echo "url=https://your-app-url.com" >> $GITHUB_OUTPUT
