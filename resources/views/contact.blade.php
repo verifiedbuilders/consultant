@@ -13,11 +13,13 @@
     <main class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
         <div class="flex flex-col md:flex-row items-center md:space-x-8 mb-12">
             <div class="md:w-1/2 mb-8 md:mb-0">
-                <img src="{{ asset('images/consultant-buildings.png') }}" alt="Consultant displaying buildings" class="rounded-lg shadow-lg w-full h-auto">
+                <img src="{{ asset('images/consultant-3.png') }}" alt="Consultant displaying buildings" class="rounded-lg shadow-lg w-full h-auto">
             </div>
             <div class="md:w-1/2">
                 <p class="text-lg text-gray-600 dark:text-gray-400 mb-6">
-                    Welcome to Verified Builders Consultant. We are a leading consultancy firm specializing in construction and building services. Our team of experts provides innovative solutions and guidance to ensure your projects are completed efficiently and to the highest standards.
+                    Welcome to Verified Builders Consultant.
+                    We are a leading consultancy firm specialized in finding your dream home in Pune.
+                    Our team of experts provides you free-of-charge right guidance to find your dream home.
                 </p>
                 <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md">
                     <h2 class="text-xl font-semibold text-gray-800 dark:text-white mb-4">Contact Us</h2>

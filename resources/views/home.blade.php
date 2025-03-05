@@ -13,14 +13,16 @@
     <main class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
         <div class="flex flex-col md:flex-row items-center md:space-x-8 mb-12">
             <div class="md:w-1/2 mb-8 md:mb-0">
-                <img src="{{ asset('images/consultant-buildings.png') }}" alt="Consultant displaying buildings" class="rounded-lg shadow-lg w-full h-auto">
+                <img src="{{ asset('images/consultant-1.png') }}" alt="Verified Builders Consultant" class="rounded-lg shadow-lg w-full h-auto">
             </div>
             <div class="md:w-1/2">
                 <h1 class="text-5xl md:text-6xl font-extrabold text-indigo-600 dark:text-indigo-400 mb-8 leading-tight">
                     Find Your Dream Home Today!
                 </h1>
                 <p class="text-lg text-gray-600 dark:text-gray-400 mb-6">
-                    Welcome to Verified Builders Consultant. We are a leading consultancy firm specialized in finding your dream home in Pune. Our team of experts provides you right guidance to find your dream home.
+                    Welcome to Verified Builders Consultant.
+                    We are a leading consultancy firm specialized in finding your dream home in Pune.
+                    Our team of experts provides you free-of-charge right guidance to find your dream home.
                 </p>
                 <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md mb-6">
                     <h2 class="text-2xl font-semibold text-gray-800 dark:text-white mb-4">Your Journey to Dream Home</h2>
@@ -41,7 +43,7 @@
                             <div class="bg-indigo-500 rounded-full p-3 mr-3">
                                 <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
                             </div>
-                            <span class="text-gray-700 dark:text-gray-300">Unlimited Sites</span>
+                            <span class="text-gray-700 dark:text-gray-300">Unlimited Site Visits</span>
                         </div>
                         <div class="flex items-center">
                             <div class="bg-indigo-500 rounded-full p-3 mr-3">
@@ -59,11 +61,7 @@
                 </div>
                 <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md">
                     <h2 class="text-xl font-semibold text-gray-800 dark:text-white mb-4">Contact Us</h2>
-                    <p class="text-gray-600 dark:text-gray-300">
-                        Email: info@verifiedbuilders.com<br>
-                        Phone: (555) 123-4567<br>
-                        Address: 123 Construction Ave, Builder's City, BC 12345
-                    </p>
+                    @include('_partials.contact-details')
                 </div>
             </div>
         </div>
