@@ -17,9 +17,7 @@
             </div>
             <div class="md:w-1/2">
                 <p class="text-lg text-gray-600 dark:text-gray-400 mb-6">
-                    Welcome to Verified Builders Consultant.
-                    We are a leading consultancy firm specialized in finding your dream home in Pune.
-                    Our team of experts provides you free-of-charge right guidance to find your dream home.
+                    Ready to turn your dream home into reality? You've come to the right place! At Verified Builders Consultant, we're not just finding houses - we're crafting your future in Pune. Our expert team is eager to offer you personalized, cost-free guidance every step of the way. Let's embark on this exciting journey together and make your perfect home a reality.
                 </p>
                 <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md">
                     <h2 class="text-xl font-semibold text-gray-800 dark:text-white mb-4">Contact Us</h2>
@@ -44,23 +42,7 @@
                 </div>
             </div>
         </div>
-        <div class="mt-12">
-            <h2 class="text-2xl font-bold text-gray-800 dark:text-white mb-6">Our Verified Builders</h2>
-            <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <li class="bg-white dark:bg-gray-700 p-4 rounded-lg shadow-md">
-                    <h3 class="text-lg font-semibold text-gray-800 dark:text-white">Acme Construction Co.</h3>
-                    <p class="text-gray-600 dark:text-gray-300">Specializing in residential buildings</p>
-                </li>
-                <li class="bg-white dark:bg-gray-700 p-4 rounded-lg shadow-md">
-                    <h3 class="text-lg font-semibold text-gray-800 dark:text-white">Skyscraper Experts Ltd.</h3>
-                    <p class="text-gray-600 dark:text-gray-300">Commercial high-rise specialists</p>
-                </li>
-                <li class="bg-white dark:bg-gray-700 p-4 rounded-lg shadow-md">
-                    <h3 class="text-lg font-semibold text-gray-800 dark:text-white">Green Builders Inc.</h3>
-                    <p class="text-gray-600 dark:text-gray-300">Eco-friendly construction solutions</p>
-                </li>
-            </ul>
-        </div>
+        @include('_partials.builders')
     </main>
 
     @include('_partials.footer')
