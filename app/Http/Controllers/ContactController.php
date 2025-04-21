@@ -18,6 +18,9 @@ class ContactController extends Controller
 
         Mail::to('verifiedbuilders007@gmail.com')->send(new ContactFormMail($validatedData));
 
-        return redirect()->route('contact')->with('success', 'Thank you for your message. We\'ll get back to you soon!');
+        return redirect()->route('contact')->with(
+            'success',
+            'Thank you for your message. We\'ll get back to you soon!'
+        );
     }
 }

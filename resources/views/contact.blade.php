@@ -17,10 +17,29 @@
             </div>
             <div class="md:w-1/2">
                 <p class="text-lg text-gray-600 dark:text-gray-400 mb-6">
-                    Ready to turn your dream home into reality? You've come to the right place! At Verified Builders Consultant, we're not just finding houses - we're crafting your future in Pune. Our expert team is eager to offer you personalized, cost-free guidance every step of the way. Let's embark on this exciting journey together and make your perfect home a reality.
+                    Ready to turn your dream home into reality? You've come to the right place!
+                    At Verified Builders Consultant, we're not just finding houses - we're crafting your future in Pune. Our expert team is eager to offer you personalized, cost-free guidance every step of the way.
+                    Let's embark on this exciting journey together and make your perfect home a reality.
                 </p>
                 <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md">
                     <h2 class="text-xl font-semibold text-gray-800 dark:text-white mb-4">Contact Us</h2>
+                    @if (session('success'))
+                        <div class="mb-4 bg-green-100 border-l-4 border-green-500 text-green-700 p-4 rounded" role="alert">
+                            <p class="font-bold">Success</p>
+                            <p>{{ session('success') }}</p>
+                        </div>
+                    @endif
+
+                    @if ($errors->any())
+                        <div class="mb-4 bg-red-100 border-l-4 border-red-500 text-red-700 p-4 rounded" role="alert">
+                            <p class="font-bold">Error</p>
+                            <ul>
+                                @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
                     <form action="{{ route('contact') }}" method="POST">
                         @csrf
                         <div class="mb-4">
