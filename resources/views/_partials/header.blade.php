@@ -19,7 +19,6 @@
                 </button>
                 <nav class="hidden md:block">
                     <ul class="flex space-x-4">
-                        <li><a href="{{ route('about') }}" class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">About</a></li>
                         <li><a href="{{ route('contact') }}" class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">Contact</a></li>
                     </ul>
                 </nav>
