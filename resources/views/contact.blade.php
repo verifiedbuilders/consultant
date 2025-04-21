@@ -47,8 +47,13 @@
                             <input type="text" name="name" id="name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" required>
                         </div>
                         <div class="mb-4">
-                            <label for="email" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Email</label>
-                            <input type="email" name="email" id="email" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" required>
+                            <label for="phone" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Mobile Number</label>
+                            <div class="flex">
+                                <span class="inline-flex items-center px-3 rounded-l-md border border-r-0 border-gray-300 bg-gray-50 text-gray-500 text-sm dark:bg-gray-600 dark:border-gray-500 dark:text-gray-300">
+                                    +91
+                                </span>
+                                <input type="tel" name="phone" id="phone" pattern="[6-9][0-9]{9}" class="mt-0 block w-full rounded-none rounded-r-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" placeholder="10-digit mobile number" required>
+                            </div>
                         </div>
                         <div class="mb-4">
                             <label for="message" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Message</label>

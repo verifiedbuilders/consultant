@@ -69,8 +69,8 @@
             <div class="value">{{ $data['name'] }}</div>
         </div>
         <div class="field">
-            <span class="label">Email:</span>
-            <div class="value">{{ $data['email'] }}</div>
+            <span class="label">Phone:</span>
+            <div class="value">{{ $data['phone'] }}</div>
         </div>
         <div class="field">
             <span class="label">Message:</span>
@@ -78,7 +78,7 @@
         </div>
     </div>
     <div class="footer">
-        <p>This message was sent from the contact form on Verified Builders Consultant website.</p>
+        <p>This message was sent from the contact form on <a href="https://verifiedbuildersconsultant.com" style="color: #4f46e5; text-decoration: underline;">verifiedbuildersconsultant.com</a>.</p>
     </div>
 </div>
 </body>

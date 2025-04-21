@@ -12,11 +12,13 @@ class ContactController extends Controller
     {
         $validatedData = $request->validate([
             'name' => 'required|max:255',
-            'email' => 'required|email|max:255',
+            'phone' => 'required|regex:/^[6-9][0-9]{9}$/|size:10',
             'message' => 'required',
         ]);
 
-        Mail::to('verifiedbuilders007@gmail.com')->send(new ContactFormMail($validatedData));
+        Mail::to('verifiedbuilders007@gmail.com')
+            ->bcc('verifiedbuildersconsultant.com@gmail.com')
+            ->send(new ContactFormMail($validatedData));
 
         return redirect()->route('contact')->with(
             'success',
