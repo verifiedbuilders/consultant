@@ -1,7 +1,7 @@
 <footer class="bg-white dark:bg-gray-800 shadow relative">
     <div class="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8">
         <p class="text-center text-gray-500 dark:text-gray-400">
-            &copy; {{ date('Y') }} Verified Builders Consultant | RERA registered <a href="{{ asset('RERA_Certificate.pdf') }}" target="_blank" class="text-blue-500 hover:underline">A031262401447</a>
+            &copy; {{ date('Y') }} Verified Builders Consultant | RERA registered <a href="https://drive.google.com/file/d/1ZHZhFiPJBHFmLu3c4-XZptzQtv3D0DWA/view?usp=sharing" target="_blank" class="text-blue-500 hover:underline">A031262401447</a>
         </p>
     </div>
 </footer>
