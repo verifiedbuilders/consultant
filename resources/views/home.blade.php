@@ -17,10 +17,10 @@
             </div>
             <div class="md:w-1/2">
                 <h1 class="text-5xl md:text-6xl font-extrabold text-indigo-600 dark:text-indigo-400 mb-8 leading-tight">
-                    Find Your Dream Home Today!
+                    Discover Your Dream Home in Pune Today!
                 </h1>
                 <p class="text-lg text-gray-600 dark:text-gray-400 mb-6">
-                    Discover your perfect home in Pune with Verified Builders Consultant! As the city's premier property experts, we're your key to unlocking dream homes. Our passionate team offers free, expert guidance to navigate Pune's vibrant real estate market. Your ideal living space is just a consultation away!
+                    Find your perfect home in <b>Pune</b> with Verified Builders Consultant! As the city's premier property experts, we're your key to unlocking dream homes. Our passionate team offers free, expert guidance to navigate Pune's vibrant real estate market. Your ideal living space is just a consultation away!
                 </p>
                 <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md mb-6">
                     <h2 class="text-2xl font-semibold text-gray-800 dark:text-white mb-4">Your Journey to Dream Home</h2>
@@ -45,15 +45,15 @@
                         </div>
                         <div class="flex items-center">
                             <div class="bg-indigo-500 rounded-full p-3 mr-3">
-                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5"></path></svg>
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                             </div>
-                            <span class="text-gray-700 dark:text-gray-300">We Guide, You Choose</span>
+                            <span class="text-gray-700 dark:text-gray-300">Zero Commission From Client</span>
                         </div>
                         <div class="flex items-center">
                             <div class="bg-indigo-500 rounded-full p-3 mr-3">
                                 <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
                             </div>
-                            <span class="text-gray-700 dark:text-gray-300">Find Your Home</span>
+                            <span class="text-gray-700 dark:text-gray-300">We Guide, You Choose</span>
                         </div>
                     </div>
                 </div>
