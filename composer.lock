@@ -4,8 +4,66 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "96c9c0048655502a0c081a19fad3afca",
+    "content-hash": "a5ebc28bc51fe367a46c639b926c05f7",
     "packages": [
+        {
+            "name": "aagjalpankaj/lalo",
+            "version": "v0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/aagjalpankaj/lalo.git",
+                "reference": "93e4644b07ec660ce0e93d0fae336e37d343df0c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/aagjalpankaj/lalo/zipball/93e4644b07ec660ce0e93d0fae336e37d343df0c",
+                "reference": "93e4644b07ec660ce0e93d0fae336e37d343df0c",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/config": "^11.0|^12.0",
+                "illuminate/log": "^11.0|^12.0",
+                "illuminate/support": "^11.0|^12.0",
+                "monolog/monolog": "^3.0",
+                "php": "^8.2",
+                "symfony/error-handler": "^7.2"
+            },
+            "require-dev": {
+                "laravel/pint": "^1.21",
+                "orchestra/testbench": "^10.1",
+                "pestphp/pest": "^3.8",
+                "rector/rector": "^2.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Aagjalpankaj\\Lalo\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Aagjalpankaj\\Lalo\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Laravel Logger: Make logging concise and consistent!",
+            "keywords": [
+                "consistent",
+                "laravel",
+                "logging",
+                "validator"
+            ],
+            "support": {
+                "issues": "https://github.com/aagjalpankaj/lalo/issues",
+                "source": "https://github.com/aagjalpankaj/lalo/tree/v0.1.0"
+            },
+            "time": "2025-04-11T19:27:14+00:00"
+        },
         {
             "name": "brick/math",
             "version": "0.12.3",
