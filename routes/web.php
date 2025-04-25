@@ -14,7 +14,7 @@ Route::get('/about', function () {
 })->name('about');
 
 Route::get('/contact', function () {
-    return view('contact');
+    return view('contact')->with(['errors' => session('errors')]);
 })->name('contact');
 
 Route::post('/contact', [ContactController::class, 'submit'])->name('contact.post');
