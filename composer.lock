@@ -4,66 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a5ebc28bc51fe367a46c639b926c05f7",
+    "content-hash": "98e339f0e45fb0c87edf7f501c39ae8e",
     "packages": [
-        {
-            "name": "aagjalpankaj/lalo",
-            "version": "v0.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/aagjalpankaj/lalo.git",
-                "reference": "93e4644b07ec660ce0e93d0fae336e37d343df0c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/aagjalpankaj/lalo/zipball/93e4644b07ec660ce0e93d0fae336e37d343df0c",
-                "reference": "93e4644b07ec660ce0e93d0fae336e37d343df0c",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/config": "^11.0|^12.0",
-                "illuminate/log": "^11.0|^12.0",
-                "illuminate/support": "^11.0|^12.0",
-                "monolog/monolog": "^3.0",
-                "php": "^8.2",
-                "symfony/error-handler": "^7.2"
-            },
-            "require-dev": {
-                "laravel/pint": "^1.21",
-                "orchestra/testbench": "^10.1",
-                "pestphp/pest": "^3.8",
-                "rector/rector": "^2.0"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Aagjalpankaj\\Lalo\\ServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Aagjalpankaj\\Lalo\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "Laravel Logger: Make logging concise and consistent!",
-            "keywords": [
-                "consistent",
-                "laravel",
-                "logging",
-                "validator"
-            ],
-            "support": {
-                "issues": "https://github.com/aagjalpankaj/lalo/issues",
-                "source": "https://github.com/aagjalpankaj/lalo/tree/v0.1.0"
-            },
-            "time": "2025-04-11T19:27:14+00:00"
-        },
         {
             "name": "brick/math",
             "version": "0.12.3",
@@ -5656,6 +5598,59 @@
     ],
     "packages-dev": [
         {
+            "name": "aagjalpankaj/logstan",
+            "version": "v0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/aagjalpankaj/logstan.git",
+                "reference": "d13e1a16e0c08db42afe7bd4ec131857cc6f7b83"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/aagjalpankaj/logstan/zipball/d13e1a16e0c08db42afe7bd4ec131857cc6f7b83",
+                "reference": "d13e1a16e0c08db42afe7bd4ec131857cc6f7b83",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^11.0|^12.0",
+                "laravel/prompts": "^0.3",
+                "php": "^8.2",
+                "phpstan/phpstan": "^2.0",
+                "symfony/console": "^7.0"
+            },
+            "require-dev": {
+                "laravel/pint": "^1.21",
+                "pestphp/pest": "^3.8",
+                "rector/rector": "^2.0"
+            },
+            "bin": [
+                "bin/logstan"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Aagjalpankaj\\Logstan\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "PHPStan extension for Laravel applications to enforce consistent logging practices.",
+            "keywords": [
+                "PHPStan",
+                "consistency",
+                "dev",
+                "laravel",
+                "logs"
+            ],
+            "support": {
+                "issues": "https://github.com/aagjalpankaj/logstan/issues",
+                "source": "https://github.com/aagjalpankaj/logstan/tree/v0.1.0"
+            },
+            "time": "2025-05-11T20:37:46+00:00"
+        },
+        {
             "name": "brianium/paratest",
             "version": "v7.7.0",
             "source": {
@@ -7468,6 +7463,64 @@
                 "source": "https://github.com/phpstan/phpdoc-parser/tree/2.1.0"
             },
             "time": "2025-02-19T13:28:12+00:00"
+        },
+        {
+            "name": "phpstan/phpstan",
+            "version": "2.1.14",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpstan/phpstan.git",
+                "reference": "8f2e03099cac24ff3b379864d171c5acbfc6b9a2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/8f2e03099cac24ff3b379864d171c5acbfc6b9a2",
+                "reference": "8f2e03099cac24ff3b379864d171c5acbfc6b9a2",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.4|^8.0"
+            },
+            "conflict": {
+                "phpstan/phpstan-shim": "*"
+            },
+            "bin": [
+                "phpstan",
+                "phpstan.phar"
+            ],
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "PHPStan - PHP Static Analysis Tool",
+            "keywords": [
+                "dev",
+                "static analysis"
+            ],
+            "support": {
+                "docs": "https://phpstan.org/user-guide/getting-started",
+                "forum": "https://github.com/phpstan/phpstan/discussions",
+                "issues": "https://github.com/phpstan/phpstan/issues",
+                "security": "https://github.com/phpstan/phpstan/security/policy",
+                "source": "https://github.com/phpstan/phpstan-src"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/ondrejmirtes",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/phpstan",
+                    "type": "github"
+                }
+            ],
+            "time": "2025-05-02T15:32:28+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
