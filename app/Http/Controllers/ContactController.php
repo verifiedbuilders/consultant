@@ -14,7 +14,7 @@ class ContactController extends Controller
             'name' => 'required|max:255',
             'phone' => 'required|regex:/^[6-9][0-9]{9}$/|size:10',
             'message' => 'required',
-            'g-recaptcha-response' => 'required|captcha'
+            'g-recaptcha-response' => 'required|captcha',
         ]);
 
         Mail::to('verifiedbuilders007@gmail.com')
