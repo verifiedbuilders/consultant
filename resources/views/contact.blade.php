@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Verified Builders Consultant</title>
     @vite('resources/css/app.css')
+    {!! NoCaptcha::renderJs() !!}
 </head>
 <body class="antialiased">
 <div class="min-h-screen bg-gray-100 dark:bg-gray-900">
@@ -72,6 +73,9 @@
                         <div class="mb-4">
                             <label for="message" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Message</label>
                             <textarea name="message" id="message" rows="4" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" required></textarea>
+                        </div>
+                        <div class="mb-4">
+                            {!! NoCaptcha::display(['data-theme' => 'light']) !!}
                         </div>
                         <div class="mt-6">
                             <button type="submit" class="w-full bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Send Message</button>

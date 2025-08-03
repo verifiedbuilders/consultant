@@ -30,6 +30,8 @@ jobs:
           cp .env.production .env
           php artisan key:generate
           echo "MAIL_PASSWORD=\"${{ secrets.MAIL_PASSWORD }}\"" >> .env
+          echo "NOCAPTCHA_SITEKEY=\"${{ secrets.NOCAPTCHA_SITEKEY }}\"" >> .env
+          echo "NOCAPTCHA_SECRET=\"${{ secrets.NOCAPTCHA_SECRET }}\"" >> .env
 
       - name: Install Npm Dependencies
         run: |
