@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "954ef503bb8b8712c63749b2bd8de42c",
+    "content-hash": "d5fe8838f0891d4a01341b34e95b7793",
     "packages": [
         {
             "name": "anhskohbo/no-captcha",
@@ -5663,21 +5663,16 @@
     "packages-dev": [
         {
             "name": "aagjalpankaj/logstan",
-            "version": "v0.1.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/aagjalpankaj/logstan.git",
-                "reference": "e63cce845e75a7e8ef969a34c793537cdf5bf547"
-            },
+            "version": "dev-main",
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/aagjalpankaj/logstan/zipball/e63cce845e75a7e8ef969a34c793537cdf5bf547",
-                "reference": "e63cce845e75a7e8ef969a34c793537cdf5bf547",
-                "shasum": ""
+                "type": "path",
+                "url": "../logstan",
+                "reference": "adc0933c691ac9ba51a61f06abb44f28e2d0c012"
             },
             "require": {
                 "illuminate/support": "^11.0|^12.0",
                 "laravel/prompts": "^0.3",
+                "nette/neon": "^3.0",
                 "php": "^8.2",
                 "phpstan/phpstan": "^2.0",
                 "symfony/console": "^7.0"
@@ -5696,23 +5691,53 @@
                     "Aagjalpankaj\\Logstan\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "psr-4": {
+                    "Tests\\": "tests/"
+                }
+            },
+            "scripts": {
+                "post-autoload-dump": [],
+                "lint": [
+                    "pint --test"
+                ],
+                "lint.fix": [
+                    "pint"
+                ],
+                "rector": [
+                    "rector --dry-run"
+                ],
+                "rector.fix": [
+                    "rector"
+                ],
+                "test": [
+                    "php -r \"echo PHP_EOL . (extension_loaded('xdebug') ? 'Xdebug enabled - Running with coverage' : 'Xdebug not enabled - Running without coverage') . PHP_EOL;\"",
+                    "php -r \"passthru(extension_loaded('xdebug') ? 'pest --parallel --coverage --min=90 --colors=always' : 'pest --parallel --colors=always');\""
+                ],
+                "ci": [
+                    "@lint",
+                    "@rector",
+                    "@test"
+                ],
+                "ci.fix": [
+                    "@lint.fix",
+                    "@rector.fix"
+                ]
+            },
             "license": [
                 "MIT"
             ],
             "description": "PHPStan extension for Laravel applications to enforce consistent logging practices.",
             "keywords": [
-                "PHPStan",
                 "consistency",
                 "dev",
                 "laravel",
-                "logs"
+                "logs",
+                "phpstan"
             ],
-            "support": {
-                "issues": "https://github.com/aagjalpankaj/logstan/issues",
-                "source": "https://github.com/aagjalpankaj/logstan/tree/v0.1.1"
-            },
-            "time": "2025-05-25T16:40:37+00:00"
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "brianium/paratest",
@@ -6633,6 +6658,74 @@
                 }
             ],
             "time": "2025-02-12T12:17:51+00:00"
+        },
+        {
+            "name": "nette/neon",
+            "version": "v3.4.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nette/neon.git",
+                "reference": "3411aa86b104e2d5b7e760da4600865ead963c3c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nette/neon/zipball/3411aa86b104e2d5b7e760da4600865ead963c3c",
+                "reference": "3411aa86b104e2d5b7e760da4600865ead963c3c",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": "8.0 - 8.4"
+            },
+            "require-dev": {
+                "nette/tester": "^2.4",
+                "phpstan/phpstan": "^1.0",
+                "tracy/tracy": "^2.7"
+            },
+            "bin": [
+                "bin/neon-lint"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.4-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause",
+                "GPL-2.0-only",
+                "GPL-3.0-only"
+            ],
+            "authors": [
+                {
+                    "name": "David Grudl",
+                    "homepage": "https://davidgrudl.com"
+                },
+                {
+                    "name": "Nette Community",
+                    "homepage": "https://nette.org/contributors"
+                }
+            ],
+            "description": "🍸 Nette NEON: encodes and decodes NEON file format.",
+            "homepage": "https://ne-on.org",
+            "keywords": [
+                "export",
+                "import",
+                "neon",
+                "nette",
+                "yaml"
+            ],
+            "support": {
+                "issues": "https://github.com/nette/neon/issues",
+                "source": "https://github.com/nette/neon/tree/v3.4.4"
+            },
+            "time": "2024-10-04T22:00:08+00:00"
         },
         {
             "name": "nikic/php-parser",
@@ -9251,7 +9344,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {},
+    "stability-flags": {
+        "aagjalpankaj/logstan": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
